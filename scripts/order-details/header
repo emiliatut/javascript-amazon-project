@@ -1,0 +1,58 @@
+// ORDER DETAILS HEADER
+/*
+export function renderOrderDetailsHeader() {
+  let productPriceCents = 0;
+  let shippingPriceCents = 0;
+
+  cart.forEach((cartItem) => {
+    // Step 1: Handling product variable
+    const product = getProduct(cartItem.productId);
+
+    if (!product) {
+      console.error(`Skipping payment summary for invalid productId: ${cartItem.productId}`);
+      return;
+    }
+
+    productPriceCents += product.priceCents * cartItem.quantity;
+
+    // Step 2: Handling delivery options
+    const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId);
+    shippingPriceCents += deliveryOption.priceCents;
+  });
+
+  const totalBeforeTaxCents = productPriceCents + shippingPriceCents;
+  const taxCents = totalBeforeTaxCents * 0.1;
+  const totalCents = totalBeforeTaxCents + taxCents;
+
+  const today = dayjs();
+
+  let orderDetailsHeader = `
+    <div class="order-header">
+
+      <div class="order-header-left-section">
+        <div class="order-date">
+          <div class="order-header-label">Order Placed:</div>
+          <div>
+            ${today}
+          </div>
+        </div>
+        <div class="order-total">
+          <div class="order-header-label">Total:</div>
+          <div>$${formatCurrency(totalCents)}</div>
+        </div>
+      </div>
+    
+      <div class="order-header-right-section">
+      <div class="order-header-label">Order ID:</div>
+          <div>27cba69d-4c3d-4098-b42d-ac7fa62b7664</div>
+      </div>
+      </div>
+    
+      <div class="order-details-grid js-order-details-grid">
+      
+      </div>
+    `;
+
+    renderOrderDetails();
+}
+*/
